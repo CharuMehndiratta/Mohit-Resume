@@ -1,0 +1,59 @@
+{% macro mainHeader(image="", name="") %}
+
+<header class="c-main-header c-main-header--fullwidth" style="background-image:url({{ image }})">
+
+  <div class="o-container">
+
+    <!-- NAVIGATION -->
+    <div class="c-main-header__nav-wrapper" data-menuAnimated="true">
+      <nav class="c-main-nav t-alt-nav js-main-nav">
+        <ul class="c-main-nav__list nav-fixed--is-active js-main-nav__list">
+          <li class="c-main-nav__item"><a href="#section-about" class="c-main-nav__link" data-navPosition="1">about</a></li>
+          <li class="c-main-nav__item"><a href="#section-education" class="c-main-nav__link" data-navPosition="2">education</a></li>
+          <li class="c-main-nav__item"><a href="#section-research" class="c-main-nav__link" data-navPosition="3">research</a></li>
+          <li class="c-main-nav__item"><a href="#section-publications" class="c-main-nav__link" data-navPosition="4">publications</a></li>
+          <li class="c-main-nav__item"><a href="#section-teaching" class="c-main-nav__link" data-navPosition="5">teaching</a></li>
+          <li class="c-main-nav__item"><a href="#section-contacts" class="c-main-nav__link" data-navPosition="6">contacts</a></li>
+        </ul>
+        <div class="c-main-nav__bars js-main-nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+    <!-- NAVIGATION END -->
+
+    <!-- ABOUT SECTION-->
+    <div id="section-about" class="c-screen-about c-screen-about--fullwidth o-screen-about" data-contentPosition="1">
+      <div class="o-screen-about__col">
+        <h1 class="c-screen-about__header u-mb-5">{{ name }}</h1>
+        <span class="c-screen-about__caption">Associated Professor, doctor of social sience</span>
+        <ul class="c-socials u-mb-35">
+          <li class="c-socials__item">
+            <a href="#" class="c-socials__link">
+              <i class="icofont icofont-brand-linkedin"></i>
+            </a>
+          </li>
+          <li class="c-socials__item">
+            <a href="#" class="c-socials__link">
+              <i class="icofont icofont-social-facebook"></i>
+            </a>
+          </li>
+          <li class="c-socials__item">
+            <a href="#" class="c-socials__link">
+              <i class="icofont icofont-social-twitter"></i>
+          </a>
+        </li>
+        </ul>
+        <p class="u-mb-10"><span class="u-block">Hello!</span> I was born in New Delhi, India on June 28, 1990. He received a B.Tech. degree in aerospace engineering from Amity University, Uttar Pradesh, India, in 2012. In August 2015, he received a M.Sc. degree in aerospace engineering jointly offered by Technische Universität München, Germany and Nanyang Technological University, Singapore. He is currently a doctoral student (PhD. scholar) and pursuing his research in Nanyang Technological University at the School of Mechanical and Aerospace Engineering. His research focus includes optimization-based learning control of unmanned aerial vehicles, nonlinear control theory, 3D printing of ground and aerial robots, machine learning techniques including Gaussian process regression and reinforcement learning.</p>
+
+        <a class="c-button c-button--bold-text u-mb-30" href="#">download cv</a>
+      </div>
+    </div>
+
+  </div>
+
+</header>
+
+{% endmacro %}
